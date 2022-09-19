@@ -10,12 +10,12 @@ variable "env" {
 
 variable "spoke_resource_group_name" {
   description = "The spoke resource group name, which will contain the k8s controlplane and worker nodes"
-  default     = "tinyedge-kubelet-sample-rg"
+  default     = "akscluster-sample-rg"
 }
 
 variable "spoke_vnet_name" {
   description = "The spoke virtual network name"
-  default     = "tinyedge-vnet"
+  default     = "akscluster-vnet"
 } 
 
 variable "vm_size" {
@@ -26,7 +26,7 @@ variable "vm_size" {
 variable "vm_user" {
   description = "Admin user name - same for all VM's"
   type        = string
-  default     = "tinyedge"
+  default     = "irenes"
 }
 
 # variable "workspace-root" {
